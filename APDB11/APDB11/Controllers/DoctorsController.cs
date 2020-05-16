@@ -39,7 +39,7 @@ namespace APDB11.Controllers
             return await _dbService.ModifyDoctor(request);
         }
         
-        [HttpPost("remove")]
+        [HttpDelete("remove")]
         public async Task<IActionResult> RemoveDoctor(RemoveDoctorRequest request)
         {
             return await _dbService.RemoveDoctor(request);
