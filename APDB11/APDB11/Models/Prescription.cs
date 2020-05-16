@@ -5,13 +5,11 @@ namespace APDB11.Models
 {
     public class Prescription
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IdPrescription { get; set; }
 
-        [Required] public DataType Date { get; set; }
-        [Required] public DataType DueDate { get; set; }
-        [Required] public int IdPatient { get; set; }
-        [Required] public int IdDoctor { get; set; }
+        public DataType Date { get; set; }
+        public DataType DueDate { get; set; }
+        public int IdPatient { get; set; }
+        public int IdDoctor { get; set; }
     }
 }

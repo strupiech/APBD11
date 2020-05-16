@@ -12,13 +12,11 @@ namespace APDB11.Controllers
     
     public class DoctorsController : ControllerBase
     {
-        private readonly HospitalDbContext _context;
         private readonly IDbService _dbService;
         
-        public DoctorsController(IDbService dbService, HospitalDbContext context)
+        public DoctorsController(IDbService dbService)
         {
             _dbService = dbService;
-            _context = context;
         }
         
         [HttpGet]

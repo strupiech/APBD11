@@ -1,12 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace APDB11.Models
 {
     public class PrescriptionMedicament
     {
-        [Key] public int IdPrescription { get; set; }
-        [Key] public int IdMedicament { get; set; }
-        [Required] public int Dose { get; set; }
-        [Required] public string Details { get; set; }
+        public int IdPrescription { get; set; }
+        public int IdMedicament { get; set; }
+        public int Dose { get; set; }
+        public string Details { get; set; }
     }
 }

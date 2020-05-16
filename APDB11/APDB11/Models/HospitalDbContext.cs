@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using APDB11.Configurations;
+using APDB11.Controllers;
+using Microsoft.EntityFrameworkCore;
 
 namespace APDB11.Models
 {
@@ -9,8 +11,7 @@ namespace APDB11.Models
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Prescription> Prescriptions { get; set; }
         public DbSet<PrescriptionMedicament> Prescription_Medicament { get; set; }
-
-
+        
         public HospitalDbContext()
         {
         }
@@ -23,8 +24,13 @@ namespace APDB11.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<PrescriptionMedicament>()
-                .HasKey(c => new {c.IdMedicament, c.IdPrescription});
+
+            modelBuilder.ApplyConfiguration(new DoctorEfConfiguration());
+            modelBuilder.ApplyConfiguration(new PatientEfConfiguration());
+            modelBuilder.ApplyConfiguration(new PrescriptionEfConfiguration());
+            modelBuilder.ApplyConfiguration(new MedicamentEfConfiguration());
+            modelBuilder.ApplyConfiguration(new PrescriptionMedicamentEfConfiguration());
+
         }
     }
 }
