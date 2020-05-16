@@ -35,6 +35,8 @@
           <e p="20200516195751_AddedRelationsInContext.Designer.cs" t="Include" />
           <e p="20200516200845_AddedRelationsInContext2.cs" t="Include" />
           <e p="20200516200845_AddedRelationsInContext2.Designer.cs" t="Include" />
+          <e p="20200516204651_AddDataToDoctors.cs" t="Include" />
+          <e p="20200516204651_AddDataToDoctors.Designer.cs" t="Include" />
           <e p="HospitalDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
