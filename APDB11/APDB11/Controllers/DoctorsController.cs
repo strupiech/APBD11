@@ -24,23 +24,23 @@ namespace APDB11.Controllers
         [HttpGet]
         public async Task<IActionResult> GetDoctor()
         {
-            return _dbService.GetDoctors();
+            return await _dbService.GetDoctors();
         }
         
-        [HttpPost("add")]
-        public async Task<IActionResult> RemoveStudent(EnrollDoctorRequest request)
+        [HttpPost("enroll")]
+        public async Task<IActionResult> EnrollDoctor(EnrollDoctorRequest request)
         {
-            return await _dbService.AddDoctor(request);
+            return await _dbService.EnrollDoctor(request);
         }
         
         [HttpPut("modify")]
-        public async Task<IActionResult> ModifyStudent(ModifyDoctorRequest request)
+        public async Task<IActionResult> ModifyDoctor(ModifyDoctorRequest request)
         {
             return await _dbService.ModifyDoctor(request);
         }
         
         [HttpPost("remove")]
-        public async Task<IActionResult> RemoveStudent(RemoveDoctorRequest request)
+        public async Task<IActionResult> RemoveDoctor(RemoveDoctorRequest request)
         {
             return await _dbService.RemoveDoctor(request);
         }

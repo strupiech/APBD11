@@ -19,5 +19,12 @@ namespace APDB11.Models
             : base(options)
         {
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<PrescriptionMedicament>()
+                .HasKey(c => new {c.IdMedicament, c.IdPrescription});
+        }
     }
 }
