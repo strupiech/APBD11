@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Marzena\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Marzena\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_APDB11.-1989152252.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Marzena\Documents\APBDwszystkie\APBD11\APDB11" t="IncludeFlat">
+      <e p="APDB11" t="IncludeRecursive">
+        <e p="APDB11.csproj" t="IncludeRecursive" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="DoctorsController.cs" t="Include" />
+        </e>
+        <e p="DTOs" t="Include">
+          <e p="Requests" t="Include">
+            <e p="EnrollDoctorRequest.cs" t="Include" />
+            <e p="ModifyDoctorRequest.cs" t="Include" />
+            <e p="RemoveDoctorRequest.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Models" t="Include">
+          <e p="Doctor.cs" t="Include" />
+          <e p="HospitalDbContext.cs" t="Include" />
+          <e p="Medicament.cs" t="Include" />
+          <e p="Patient.cs" t="Include" />
+          <e p="Prescription.cs" t="Include" />
+          <e p="PrescriptionMedicament.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="APDB11.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="IDbService.cs" t="Include" />
+          <e p="SqlServerHospitalDbService.cs" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="APDB11.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
